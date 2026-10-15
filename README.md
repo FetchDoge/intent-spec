@@ -124,6 +124,8 @@ Corrections are the credential: what changed is recorded here, not hidden.
   from document to artifact is an estate intake rule — *no spec, no route* —
   which is not built here. Nothing in this repo has run in production.
 
+Built by Marcus Richards, directing AI coding agents.
+
 ## License
 
 MIT. See `LICENSE`. Every claim in this README is meant to be checkable by someone who doesn't trust it yet. If something doesn't reproduce on a clean clone, please open an issue.
