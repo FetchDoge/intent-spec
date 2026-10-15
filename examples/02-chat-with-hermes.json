@@ -38,7 +38,7 @@
   },
   "route": {
     "class": "govern",
-    "owner": "Ektar (VM seat)",
+    "owner": "agent (VM seat)",
     "reason": "third-party API involved; ask-tier by default"
   },
   "scope": {

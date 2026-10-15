@@ -49,7 +49,7 @@
   },
   "route": {
     "class": "govern",
-    "owner": "Ektar (VM seat)",
+    "owner": "agent (VM seat)",
     "reason": "multi-step curation ending in an approval gate \u2014 the publish tap"
   },
   "scope": {
