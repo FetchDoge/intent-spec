@@ -5,7 +5,7 @@ Thanks for your interest in contributing! Here's how to get started.
 ## Quick Setup
 
 ```bash
-git clone https://github.com/marsojuji-cmyk/intent-spec
+git clone https://github.com/FetchDoge/intent-spec
 cd intent-spec
 python3 -m venv .venv
 source .venv/bin/activate
