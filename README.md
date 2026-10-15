@@ -2,7 +2,7 @@
 
 **Compiles raw operator intent into a typed IR for existing agent machinery. The validator rejects specs that drift from what the operator said.**
 
-[![Claims integrity](https://github.com/marsojuji-cmyk/intent-spec/actions/workflows/claims.yml/badge.svg)](https://github.com/marsojuji-cmyk/intent-spec/actions/workflows/claims.yml)
+[![Claims integrity](https://github.com/FetchDoge/intent-spec/actions/workflows/claims.yml/badge.svg)](https://github.com/FetchDoge/intent-spec/actions/workflows/claims.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Python 3.11](https://img.shields.io/badge/python-3.11-blue.svg)](.github/workflows/claims.yml)
 
@@ -62,7 +62,7 @@ The intent-diff gate is **heuristic**, and labeled as such in its output. It fla
 ## Quickstart
 
 ```bash
-git clone https://github.com/marsojuji-cmyk/intent-spec && cd intent-spec
+git clone https://github.com/FetchDoge/intent-spec && cd intent-spec
 python3 validator/validator.py examples/01-organize-estate.json  # PASS (exit 0)
 python3 validator/validator.py examples/02-chat-with-hermes.json  # PASS (exit 0)
 python3 validator/validator.py examples/03-drift-caught.json      # FAIL (exit 1)
