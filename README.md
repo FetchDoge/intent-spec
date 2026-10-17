@@ -63,6 +63,7 @@ The intent-diff gate is **heuristic**, and labeled as such in its output. It fla
 
 ```bash
 git clone https://github.com/FetchDoge/intent-spec && cd intent-spec
+python3 compiler/intake.py "Organize files; do not touch git history" --verify  # PASS (exit 0)
 python3 validator/validator.py examples/01-organize-estate.json  # PASS (exit 0)
 python3 validator/validator.py examples/02-chat-with-hermes.json  # PASS (exit 0)
 python3 validator/validator.py examples/03-drift-caught.json      # FAIL (exit 1)
@@ -83,9 +84,9 @@ Dependency-free Python 3.
 
 ## Evidence
 
-Run locally on 2026-10-07:
 - Examples 01 and 02 return PASS (exit 0).
 - Example 03 returns FAIL (exit 1) with four drift findings: `INVENTED_REQUIREMENTS`, `AUTHORITY_ESCALATION`, `UNMARKED_IRREVERSIBLE` and `SCOPE_EXPANSION`.
+- 10 unit tests pass: `python3 -m unittest discover tests`.
 - `python3 scripts/check_claims.py` passes. CI runs the same check on every push. It verifies README paths, links and secret-shaped strings, not prose truth.
 
 ## Contents
@@ -95,7 +96,9 @@ Run locally on 2026-10-07:
   lines, falsifier)
 - `intent_spec.schema.json` — the IR schema (JSON Schema draft-07)
 - `validator/validator.py` — structural checks + the intent-diff gate
+- `compiler/intake.py` — Pass 1 Capture + Recover intake compiler and pre-execution gate
 - `examples/` — three worked `IntentSpec` instances with a provenance note
+- `tests/` — unit tests for the validator and intake compiler
 - `ADVERSARIAL-REVIEW.md` — the spec's own four council questions, answered
   as kill-attempts, with the two fixes they forced
 
